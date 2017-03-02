@@ -1,0 +1,125 @@
+.ak-dept-header-wrapper{
+  background: url('../img/header-texture-white.jpg') no-repeat top left;
+  margin: 10px 5px 0 5px;
+  padding: 10px;
+  position: relative;
+  @include bp('small') {
+    margin: 10px 10px 0 10px;
+  }
+  @include bp('medium') {
+    padding: 15px;
+  }
+  @include bp('xlarge') {
+    margin: 10px 0 0 0;
+  }
+  &.ak-texture-blue {
+    background-image: url('../img/header-texture-blue.jpg');
+  }
+  &.ak-texture-red {
+    background-image: url('../img/header-texture-red.jpg');
+  }
+  &.ak-texture-gold {
+    background-image: url('../img/header-texture-gold.jpg');
+  }
+  &.ak-texture-green {
+    background-image: url('../img/header-texture-green.jpg');
+  }
+  &.ak-texture-purple {
+    background-image: url('../img/header-texture-purple.jpg');
+  }
+  &.ak-texture-orange {
+    background-image: url('../img/header-texture-orange.jpg');
+  }
+  &.ak-texture-teal {
+    background-image: url('../img/header-texture-teal.jpg');
+  }
+  &.ak-texture-pink {
+    background-image: url('../img/header-texture-pink.jpg');
+  }
+
+}
+.ak-dept-nav-wrapper {
+  float:left;
+  width: 1.75rem;
+  margin: 0 5px 0 0;
+  @include bp('small') {
+    width: 2.25rem;
+  }
+  @include bp('medium') {
+    width: 2.5rem;
+  }
+  .ak-dept-nav-trigger {
+    color: $white;
+    font-size: 1rem;
+    display: block;
+    padding:5px;
+    @include bp('small') {
+      font-size: 1.5rem;
+    }
+    @include bp('medium') {
+      font-size: 1.75rem;
+    }
+  }
+}
+.ak-dept-nav {
+  display: none;
+  position: absolute;
+  left:0;
+  top:100%;
+  background: $white;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+  z-index: 100;
+  width: 100%;
+  border: 1px solid #ccc;
+  @include bp('medium') {
+    width: 250px;
+  }
+  &:before {
+    content: '\f0d8';
+    color: $white;
+    font-family:'FontAwesome';
+    position: absolute;
+    font-size: 1.5rem;
+    top:-20px;
+    left:15px;
+    @include bp('small') {
+      left:18px;
+    }
+    @include bp('medium') {
+      left:23px;
+    }
+  }
+  &.ak-active {
+    display: block;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-bottom: 1px solid $light-gray;
+      &:last-child {
+        border-bottom: 0;
+      }
+      a {
+        display: block;
+        padding: 10px;
+      }
+    }
+  }
+}
+.ak-dept-headline {
+  margin:0;
+  color: $white;
+  font-size: 1.25rem;
+  padding: 2px 0 0;
+  @include bp('small') {
+    font-size: 1.5rem;
+  }
+  @include bp('medium') {
+    font-size: 1.75rem;
+  }
+}

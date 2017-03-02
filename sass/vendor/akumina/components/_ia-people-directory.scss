@@ -1,0 +1,150 @@
+.interAction {
+  .ia-people-search {
+    background: transparent;
+    padding:0 0 1rem;
+    .ia-people-search-bar {
+      padding: 5px 0.5rem;
+    }
+  }
+  .ia-people-az {
+    background: transparent;
+    padding:0;
+  }
+  .ia-people-az-list {
+    li {
+      background: $light-blue;
+      &.ak-selected {
+        background: $medium-blue;
+      }
+      #{$a-tags} {
+        color: $white;
+      }
+    }
+  }
+  .ia-people-results-view {
+    width: 100px;
+    span {
+      background: $white;
+    }
+  }
+  .ia-people-filters {
+    margin: 1rem 0;
+    @include bp('medium') {
+      //margin:0;
+    }
+    .ia-people-filter-trigger {
+      background: $white;
+    }
+    .ia-people-filter-wrapper {
+      margin: 0;
+      @include bp('small') {
+        margin: 0;
+      }
+      &.ia-active {
+        background: $white;
+      }
+    }
+  }
+  .ia-people-filter {
+    background: $white;
+    padding: 10px;
+    margin: 0 0 1px;
+  }
+  .ia-people-results {
+    @include clearfix;
+    padding: 0;
+    @include bp('small') {
+      width: auto;
+    }
+  }
+  .ia-people-results-grid {
+    li {
+      width: 100%;
+      @include bp('small') {
+        width: 100%;
+      }
+      @include bp('medium') {
+        width: 50%;
+      }
+      @include bp('large') {
+        width: 33.3333%;
+      }
+      transition: all 0.5s ease;
+      transition: transform 0.2s ease;
+      #{$hover-active} {
+        .ia-profile-details, .ia-profile-avatar {
+          transform: scale(1.05);
+
+        }
+        .ia-profile-details {
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+    .ia-profile-avatar {
+      transition: all 0.5s ease;
+      transition: transform 0.2s ease;
+      img {
+        border-color: $medium-blue;
+      }
+    }
+    .ia-profile-details {
+      border: 1px solid #ddd;
+      background: $white;
+      height: 300px;
+      transition: all 0.5s ease;
+      transition: transform 0.2s ease;
+      #{$hover-active} {
+        border: 1px solid #ccc;
+
+        #{$a-tags} {
+          color: $body-font-color;
+        }
+      }
+    }
+    .ia-profile-name {
+      font-size: 1.1rem;
+      color: darken($medium-blue, 5%);
+    }
+    .ia-profile-title {
+      font-size: 0.875rem;
+      color: $medium-gray;
+    }
+  }
+  .ia-people-results-list  {
+    font-size: 1rem;
+    thead {
+      background: rgba($white, .5);
+    }
+    tbody {
+      background: $white;
+      padding: 10px;
+      font-size: 1rem;
+    }
+  }
+  .ia-profile-popup {
+    .ia-profile-full {
+      margin-top: 1.5rem;
+    }
+    .ia-profile-avatar img {
+      border-color: $medium-blue;
+    }
+    .ia-profile-name {
+      color: darken($medium-blue, 5%);
+    }
+    .ia-profile-title {
+      color: $medium-gray;
+    }
+    .ia-profile-email {
+      a {
+        transition: all 0.5s ease;
+      }
+      #{$a-tags} {
+        color: $body-font-color;
+      }
+      #{$a-tags-hover} {
+        color: $medium-blue;
+      }
+    }
+  }
+}

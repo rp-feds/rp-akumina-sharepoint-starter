@@ -1,0 +1,17 @@
+.ak-template-home {
+  padding: 10px 5px;
+  @include bp('medium') {
+    padding: 20px 10px;
+  }
+}
+.ak-template {
+  padding: 10px 5px;
+  @include bp('small') {
+    padding: 10px;
+  }
+  .ak-page-title {
+    font-size: 2rem;
+    margin: 0 0 10px;
+    padding:0;
+  }
+}

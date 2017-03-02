@@ -1,0 +1,30 @@
+.interAction {
+  .ia-quicklinks {
+    background: $white;
+    padding: 10px;
+    font-weight: $font-normal;
+    max-width: 100%;
+    margin: 0 0 10px;
+    .ia-quicklinks-level-1 {
+      color: $body-font-color;
+      >li {
+        border-color: $light-gray;
+        .ia-quicklink-flyout-trigger {
+          &:hover,
+          &:focus,
+          &:active {
+            color: $medium-blue;
+          }
+        }
+        a {
+          color: $body-font-color;
+          &:hover,
+          &:focus,
+          &:active {
+            color: $medium-blue;
+          }
+        }
+      }
+    }
+  }
+}

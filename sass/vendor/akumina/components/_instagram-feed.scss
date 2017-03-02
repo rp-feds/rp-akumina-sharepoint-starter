@@ -1,0 +1,128 @@
+.ak-instagram-feed {
+  .ak-instagram-top {
+    position: relative;
+    .ak-instagram-tab {
+      @include whiteTab;
+    }
+    .ak-shade-overlay {
+      @include shadeOverlay;
+    }
+  }
+  margin: 15px 0;
+  @include clearfix;
+  .ak-instagram-item {
+    width: 50%;
+    float: left;
+    padding: 0 15px 0 0;
+    box-sizing: border-box;
+    position: relative;
+    &:nth-child(even) {
+      padding:0;
+    }
+    @include bp('small') {
+      width: 100%;
+      padding: 0 0;
+    }
+    @include bp('medium') {
+      width: 100%;
+      padding: 0 0;
+    }
+    @include bp('large') {
+      width: 50%;
+      padding: 0 15px 0 0;
+    }
+  }
+  .ak-instagram-item-wrap {
+    background: $white;
+    @include clearfix;
+    padding:10px;
+  }
+  .ak-instagram-author {
+    position: absolute;
+    left:10px;
+    z-index: 9;
+    @include clearfix;
+    @include bp('medium') {
+      padding: 10px;
+      border: 1px solid #edeeee;
+      border-bottom: 0;
+      min-height: 55px;
+      position: relative;
+      left:0;
+    }
+  }
+  .ak-instagram-avatar {
+    border: 1px solid #cccfd0;
+    border-radius: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: left;
+    padding: 0 5px 0 0;
+    @include clearfix;
+    img {
+      width: 40px;
+      border-radius: 50%;
+    }
+  }
+  .ak-instagram-authorName {
+    display:none;
+    padding: 7px 10px 0;
+    color: #125688;
+    font-weight: $font-medium;
+    font-size: .875rem;
+    overflow: hidden;
+    height: 24px;
+    @include bp('medium') {
+      display: block;
+      white-space: nowrap;
+    }
+  }
+  .ak-instagram-likes {
+    float: right;
+    padding: 10px;
+    display: inline-block;
+    color: #a5a7aa;
+  }
+  .ak-instagram-image {
+    margin: 15px 0 0;
+    border: 1px solid #edeeee;
+    width: 100%;
+    height: 170px;
+    line-height: 170px;
+    text-align: center;
+    overflow: hidden;
+    background: #ededed;
+    position: relative;
+    img {
+      width: 100%;
+      max-width: 100%;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+    }
+    @include bp('small') {
+      width: 100%;
+      height: 250px;
+      line-height: 250px;
+    }
+    @include bp('medium') {
+      border-top:0;
+      margin:0;
+    }
+  }
+  .ak-instagram-hashtags {
+    height: 65px;
+    padding: 10px;
+    overflow: hidden;
+    margin: 0 0 10px;
+    border: 1px solid #edeeee;
+    border-top: 0;
+    font-size: .875rem;
+    line-height: 1.2;
+  }
+}

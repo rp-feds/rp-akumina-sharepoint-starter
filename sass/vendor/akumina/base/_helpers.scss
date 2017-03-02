@@ -1,0 +1,42 @@
+
+// Variables for link states
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:focus, a:active, a:hover';
+
+//Variables for hover/active for non-links
+$hover-active: '&:hover, &:active, &:focus';
+
+a {
+  transition: all 0.5s ease;
+}
+
+// Clearfix
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+p.ak-quiet {
+  color: $medium-gray;
+  padding: 5px 0;
+  font-size: .875rem;
+}
+
+// Header helper function
+@function headings($from:1, $to:6) {
+    @if $from == $to {
+        @return 'h#{$from}';
+    } @else {
+        @return 'h#{$from},' + headings($from+1, $to);
+    }
+}
+// To use:
+// #{headings(1,6)} {
+  // Styles
+// }

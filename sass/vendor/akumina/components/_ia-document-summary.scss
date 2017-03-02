@@ -1,0 +1,38 @@
+.interAction {
+  .ia-control-header {
+    background: transparent;
+    padding: 0;
+    .ia-control-header-heading {
+      background: transparent;
+      color: $body-font-color;
+      font-size: 1rem;
+      position: relative;
+      margin: 0;
+      padding: 0 0 10px;
+      text-transform: uppercase;
+    }
+    .fa-none {
+      display: none;
+    }
+  }
+  .ia-transformer-tab-nav {
+    li {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+    }
+    a {
+      padding: 3px 7px;
+    }
+  }
+  .tablesaw thead tr:first-child th {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #ccc;
+  }
+  tbody {
+    font-size: 0.875rem;
+    a {
+      color: $body-font-color;
+    }
+  }
+}

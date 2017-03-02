@@ -1,0 +1,36 @@
+.ak-my-apps {
+  ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+    @include clearfix;
+    li {
+      margin:0;
+      padding:0;
+      list-style: none;
+      float:left;
+      width: 50%;
+      box-sizing: border-box;
+      padding: 0 10px 0 0;
+      margin: 0 0 15px;
+      @include bp('large') {
+        width: 33%;
+      }
+    }
+  }
+  .ak-app-list-title {
+    display: block;
+    text-align: center;
+    font-size: .875rem;
+  }
+  .ak-my-apps-link {
+    color: $body-font-color;
+    text-decoration: none;
+    img {
+      display: block;
+      padding: 0 0 10px;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+}

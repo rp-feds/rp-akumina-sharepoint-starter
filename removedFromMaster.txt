@@ -1,0 +1,93 @@
+
+
+    <!--MS:<SharePoint:ScriptLink ID="ScriptLink10942" Name="~sitecollection/Style Library/DigitalWorkPlace/js/digitalworkplace.shippedsite.min.js" runat="server">-->
+    <!--ME:</SharePoint:ScriptLink>-->
+
+This is the akumina Toolbar
+        <nav class="ak-user-nav">
+                    </nav>
+
+
+                     
+
+                            <header class="ak-header">
+                              <!-- This is Mobile Akumina Toolbar -->
+                            <span class="ak-user-nav-trigger fa fa-bars">
+                            </span>
+                            <div class="ak-site-logo">
+                                <!-- NEED TO REPLACE THIS WITH SOMETHING DYNAMIC TO THE FARM -->
+                                <a href="https://samnadda.sharepoint.com/sites/Horizon/">
+                                    <img alt="Site Logo" src="" />
+                                </a>
+                            </div>
+                            <div class="ak-searches">
+                                <div class="ak-search-directory">
+                                    <i class="ak-search-directory-icon fa fa-book">
+                                    Search Directory
+                                
+                                    </i>
+                                </div>
+                                <div class="ak-search-sites">
+                                    <i class="ak-search-sites-icon fa fa-search">
+                                    Search Site
+                                
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="ak-search-directory-fields">
+                                <!-- InterAction Search Combo Control -->
+                                <div class="interAction">
+                                    <div class="ia-search-combo">
+                                        <span class="ia-search-icon fa fa-search">
+                                        </span>
+                                        <input type="text" class="ia-search-combo-box" id="directorySearch" title="type &quot;a&quot;" placeholder="Directory Search" />
+                                        <!-- Current Site Dropdown -->
+                                        <button class="ia-search-combo-btn ia-search-directory-btn">
+                                        Go
+                                    
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- end .interAction -->
+                            </div>
+                            <div class="ak-search-sites-fields">
+                                <!-- InterAction Search Combo Control -->
+                                <div class="interAction">
+                                    <div class="ia-search-combo">
+                                        <span class="ia-search-icon fa fa-search">
+                                        </span>
+                                        <input type="text" class="ia-search-combo-box" id="siteSearch" title="type &quot;a&quot;" placeholder="Site Search" />
+                                        <!-- Current Site Dropdown -->
+                                        <div class="ia-search-combo-site-list">
+                                            <span class="ia-search-combo-site-name">
+                                            Current Site
+                                        
+                                            </span>
+                                            <span class="ia-search-combo-site-list-icon fa fa-caret-down">
+                                            </span>
+                                            <div class="ia-search-combo-site-list-dropdown">
+                                                <ul>
+                                                    <li>
+                                                        <a href="">
+                                                        Current Site
+                                                    
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                        Entire System
+                                                    
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <button class="ia-search-combo-btn ia-search-site-btn">
+                                        Go
+                                    
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- end .interAction -->
+                            </div>
+                        </header>

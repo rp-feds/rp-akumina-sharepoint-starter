@@ -1,0 +1,110 @@
+.ak-dashboard-head {
+  position: relative;
+  padding: 10px;
+  margin:0;
+  font-size: .875rem;
+  color: $body-font-color;
+  @include bp('medium') {
+    padding:20px
+  }
+  @include bp('large') {
+    font-size: 1rem;
+  }
+ .ak-user-avatar {
+    img {
+      border-radius: 50%;
+      position: absolute;
+      top: 0px;
+      left:0px;
+      width: 70px;
+      @include bp('medium') {
+        width: 100px;
+        top:0px;
+        left:0px;
+      }
+    }
+  }
+  .ak-user-info {
+    background: rgba($white, .85);
+    border: 1px solid $light-gray;
+    padding: 10px 20px 10px 65px;
+    margin: 10px 0 0 10px;
+    @include bp('medium') {
+      padding: 10px 20px 10px 90px;
+      margin: 10px 0 0 20px;
+    }
+    .ak-user-name {
+      margin:0 0 5px;
+      padding: 0 0 0;
+      border-bottom: 1px solid #bbb;
+      font-weight: $font-bold;
+      font-size: 1.2rem;
+      @include bp('medium') {
+        font-size: 1.4rem;
+      }
+    }
+    .ak-user-data {
+      margin: 0 0 5px;
+      font-size: .875rem;
+    }
+    .ak-user-title {
+      font-weight: $font-medium;
+      font-size: 1.05rem;
+      @include bp('medium') {
+        font-size: 1.2rem;
+      }
+    }
+
+  }
+
+}
+.ak-dashboard-wrap {
+  position: relative;
+}
+
+.ak-dashboard {
+  background: $light-gray;
+  padding: 10px;
+  a.ak-dashboard-settings-btn {
+    @include blueBtn;
+    margin: 0 0 10px;
+    float:right;
+    clear:both;
+    text-decoration: none;
+    color: $white;
+  }
+}
+.ak-dashboard-header {
+  position: relative;
+  margin:0;
+  padding: 0 0 10px;
+  text-transform: uppercase;
+  font-size: .875rem;
+  color: $body-font-color;
+  @include bp('large'){
+    font-size: 1rem;
+  }
+}
+.ak-dashboard-widget {
+  background: $white;
+  border: 1px solid #ccc;
+  padding:10px;
+  border-radius: 5px;
+  margin: 0 0 10px;
+}
+.ak-dashboard-rows {
+  clear:both;
+}
+
+.ak-dashboard-check-list {
+  margin: 0 0 15px;
+  .ak-dashboard-check-item {
+    margin: 0 0 10px;
+    input {
+    }
+    label {
+      padding: 0 0 0 10px;
+      display:inline
+    }
+  }
+}

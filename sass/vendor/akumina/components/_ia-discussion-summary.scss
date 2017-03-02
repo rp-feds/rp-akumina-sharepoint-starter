@@ -1,0 +1,28 @@
+.interAction {
+  .ia-discussion-board {
+    .ia-discussion-author-icon {
+      width: 50px;
+      img {
+        border-radius: 50%;
+        width: 50px;
+      }
+    }
+  }
+  .ia-discussion-summary {
+    .ia-discussion-post-info {
+      padding-left: 60px;
+    }
+    .ia-discussion-author-name {
+      font-weight: $font-normal;
+    }
+    .ia-discussion-postname {
+      font-weight: $font-medium;
+    }
+
+  }
+  .ia-discussion-summary-see-all a {
+    font-weight: $font-medium;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,90 @@
+/* Fira Sans Regular */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    //local('Fira Sans'),
+    //local('FiraSans-Regular'),
+    url(fonts/FiraSans/firasans-regular-webfont.woff2) format('woff2'),
+    url(fonts/FiraSans/firasans-regular-webfont.woff) format('woff'),
+    url(fonts/FiraSans/firasans-regular-webfont.eot) format('eot');
+}
+/* Fira Sans Medium */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    //local('Fira Sans'),
+    //local('FiraSans-Bold'),
+    url(fonts/FiraSans/firasans-bold-webfont.woff2) format('woff2'),
+    url(fonts/FiraSans/firasans-bold-webfont.woff) format('woff'),
+    url(fonts/FiraSans/firasans-bold-webfont.eot) format('eot');
+}
+/* Fira Sans Bold */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    //local('Fira Sans'),
+    //local('FiraSans-Medium'),
+    url(fonts/FiraSans/firasans-medium-webfont.woff2) format('woff2'),
+    url(fonts/FiraSans/firasans-medium-webfont.woff) format('woff'),
+    url(fonts/FiraSans/firasans-medium-webfont.eot) format('eot');
+}
+
+// Two primary colors used in header, main nav, etc
+$dw-primary: #00b3e4;
+$dw-secondary: #2980b9;
+
+// Fonts
+$body-font-color: #545454;
+$body-font: 'Open Sans', Arial, Helvetica, sans-serif;
+$header-font: 'Raleway', Arial, Helvetica, sans-serif;
+$font-normal: 400;
+$font-medium: 500;
+$font-bold: 700;
+
+
+// Main color Variables
+$white: #fff;
+$light-gray: #e7e7e7;
+$medium-gray: #7b7b7b;
+$dark-gray: #3c3c4c;
+$xdark-gray: #2b2b36;
+$light-blue: $dw-primary;
+$medium-blue: $dw-secondary;
+$gray-text: #767676;
+$alert-red: #a94442;
+$hz-red: #9b001b;
+
+
+
+// Media Queries - Mobile First
+@mixin bp($point) {
+
+  $global-bp-xsmall: "(min-width: 320px)" ;
+  $global-bp-small: "(min-width: 640px)" ;
+  $global-bp-medium: "(min-width: 840px)" ;
+  $global-bp-large: "(min-width: 1280px)" ;
+  $global-bp-xlarge: "(min-width: 1441px)" ;
+
+  @if $point == xlarge {
+    @media #{$global-bp-xlarge} { @content; }
+  }
+  @if $point == large {
+    @media #{$global-bp-large} { @content; }
+  }
+  @else if $point == medium {
+    @media #{$global-bp-medium} { @content; }
+  }
+  @else if $point == small {
+    @media #{$global-bp-small}  { @content; }
+  }
+  @else if $point == xsmall {
+    @media #{$global-bp-xsmall}  { @content; }
+  }
+
+}

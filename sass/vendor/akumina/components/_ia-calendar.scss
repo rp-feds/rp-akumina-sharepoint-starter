@@ -1,0 +1,50 @@
+.interAction {
+  .ia-cal-grid {
+    background: $white;
+  }
+  .fc-widget-header {
+    background: $light-blue;
+    color: $white;
+  }
+  .ia-cal-month-nav {
+    color:$medium-blue;
+  }
+  .ia-cal-header {
+    padding:0 0 10px;
+    .ia-cal-view-toggle .ia-cal-list-view {
+      width: 2.75rem;
+    }
+    .ia-cal-view-toggle {
+     .ia-cal-list-view, .ia-cal-grid-view {
+        width: 2.75rem;
+        background: $white;
+        border-color: $light-gray;
+      }
+    }
+  }
+  .ia-cal-prev, .ia-cal-next {
+    color:$medium-blue;
+  }
+  .ia-cal-list {
+    background: $white;
+    .ia-cal-date {
+      background: #f8f8f8;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+  }
+  .ia-cal-list-items .ia-cal-time {
+    border-color: $light-blue;
+  }
+  .ia-cal-year-nav .ia-cal-year-months ul li.ia-cal-current {
+    background: #fcf8e3;
+  }
+  .fc-day-grid-event {
+    background: $medium-blue;
+    border-color: $medium-blue;
+  }
+  .ia-cal-year-nav {
+    background: $white;
+    padding: 10px 0;
+  }
+}

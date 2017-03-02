@@ -1,0 +1,27 @@
+.ak-news-detail {
+  background: $white;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+ .ak-news-title {
+   font-size: 1.5rem;
+   margin: 5px 0 10px;
+ }
+ .ak-news-date {
+   margin: 0 0 10px;
+   color: $medium-gray;
+ }
+ .ak-news-img {
+   width: 100%;
+   margin: 0 auto;
+   display:block;
+   @include bp('medium') {
+     float:right;
+     width: auto;
+     max-width: 50%;
+     margin: 0 10px 10px 10px;
+   }
+   @include bp('large') {
+     max-width: 40%;
+   }
+ }
+}

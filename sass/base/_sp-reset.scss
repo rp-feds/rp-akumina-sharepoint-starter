@@ -1,0 +1,21 @@
+#s4-bodyContainer {
+    padding-bottom: 0;
+}
+
+// .ak-page-container {
+//     	h2, h3, .ms-h2, .ms-h3, .ms-headerFont,
+// 	h4, h5, h6, .ms-h4, .ms-h5, .ms-h6 {
+// 		font-family: $raleway;
+// 	}
+// }
+
+
+// Hide Ribbon on Mobile
+#ms-designer-ribbon {
+	display: none;
+
+	@include bp('medium') {
+    	display: block;
+  	}
+}
+

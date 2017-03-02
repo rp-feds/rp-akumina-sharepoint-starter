@@ -1,0 +1,6 @@
+.ak-page-container {
+  @include bp('small') {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

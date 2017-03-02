@@ -1,0 +1,78 @@
+.ak-dept-list {
+  ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+    li {
+      list-style: none;
+      margin:0;
+      padding:0 10px 10px 0;
+      @include bp('small') {
+        width: 50%;
+        float:left;
+      }
+      @include bp('medium') {
+        width: 33.333%;
+      }
+      @include bp('large') {
+        width: 25%;
+      }
+      a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        background: $white;
+        overflow: hidden;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        @include clearfix;
+      }
+      .ak-dept-title {
+        display: block;
+        font-size: 1.1rem;
+        margin: 5px 0 0 60px;
+        height: 2.75rem;
+        overflow: hidden;
+        @include bp('small') {
+          font-size: 1rem;
+          height: 2.5rem;
+        }
+        @include bp('large') {
+          font-size: 1.15rem;
+          height: 2.75rem;
+        }
+      }
+    }
+  }
+  .ak-dept-block {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float:left;
+    background-position: center center;
+  }
+  .ak-dept-blue {
+    background-image: url('../img/square-texture-blue.jpg');
+  }
+  .ak-dept-gold {
+    background-image: url('../img/square-texture-yellow.jpg');
+  }
+  .ak-dept-red {
+    background-image: url('../img/square-texture-red.jpg');
+  }
+  .ak-dept-green {
+    background-image: url('../img/square-texture-green.jpg');
+  }
+  .ak-dept-purple {
+    background-image: url('../img/square-texture-purple.jpg');
+  }
+  .ak-dept-pink {
+    background-image: url('../img/square-texture-pink.jpg');
+  }
+  .ak-dept-teal {
+    background-image: url('../img/square-texture-teal.jpg');
+  }
+  .ak-dept-orange {
+    background-image: url('../img/square-texture-orange.jpg');
+  }
+}

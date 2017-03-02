@@ -1,0 +1,179 @@
+.ak-searches {
+  position: absolute;
+  top:10px;
+  right:5px;
+}
+.ak-search-directory {
+  float:left;
+  padding: 10px 5px 10px;
+  position: relative;
+  @include bp('small') {
+    padding:25px 10px 10px;
+  }
+  .ak-search-directory-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden;
+    display: block;
+    font-size: 1.5rem;
+    color: $white;
+    &:before {
+      padding: 0 10px 10px 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    @include bp('small') {
+      width: 1.75rem;
+      height: 1.75rem;
+      font-size: 1.75rem;
+    }
+  }
+}
+.ak-search-sites {
+  float:left;
+  padding: 10px 5px 10px;
+  @include bp('small') {
+    padding:25px 10px 10px;
+  }
+  .ak-search-sites-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden;
+    display: block;
+    font-size: 1.5rem;
+    color: $white;
+    &:before {
+      padding: 0 10px 10px 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    @include bp('small') {
+      width: 1.75rem;
+      height: 1.75rem;
+      font-size: 1.75rem;
+    }
+  }
+}
+
+.ak-search-directory-fields {
+  display: none;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  background: darken($light-blue, 6%);
+  padding: .5rem .5rem .25rem;
+  box-sizing: border-box;
+  box-shadow: 0 5px 5px rgba(0,0,0,.2);
+  @include bp('small') {
+    position: absolute;
+    width: 393px;
+    right:10px;
+    padding:10px 10px 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  &.ak-active {
+    display: block;
+  }
+  &:before {
+    content: '\f0d8';
+    color: darken($light-blue, 6%);
+    font-family:'FontAwesome';
+    position: absolute;
+    font-size: 1.3rem;
+    top:-17px;
+    right:53px;
+    @include bp('small') {
+      right:63px;
+    }
+  }
+  .ia-search-combo {
+    width: 100%;
+    .ia-search-combo-site-list {
+      height: 2.2rem;
+    }
+    .ia-search-combo-box {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    .ia-search-combo-site-name {
+      @include bp('small') {
+        width: 87px;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+    .ia-search-combo-btn {
+      background: #fff;
+      border-radius: 0;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      height: 2.1rem;
+      padding: 0 5px;
+      margin-top: .05rem;
+
+    }
+  }
+}
+.ak-search-sites-fields {
+  display: none;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  background: darken($light-blue, 6%);
+  padding: .5rem .5rem .25rem;
+  box-sizing: border-box;
+  box-shadow: 0 5px 5px rgba(0,0,0,.2);
+  @include bp('small') {
+    position: absolute;
+    width: 393px;
+    right:0;
+    padding:10px 10px 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  &.ak-active {
+    display: block;
+  }
+  &:before {
+    content: '\f0d8';
+    color: darken($light-blue, 6%);
+    font-family:'FontAwesome';
+    position: absolute;
+    font-size: 1.3rem;
+    top:-17px;
+    right:18px;
+    @include bp('small') {
+      right:23px;
+    }
+  }
+  .ia-search-combo {
+    width: 100%;
+    .ia-search-combo-site-list {
+      height: 2.2rem;
+    }
+    .ia-search-combo-box {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    .ia-search-combo-site-name {
+      @include bp('small') {
+        width: 87px;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+    .ia-search-combo-btn {
+      background: #fff;
+      border-radius: 0;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      height: 2.1rem;
+      padding: 0 5px;
+      margin-top: .05rem;
+
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.ak-my-team {
+  ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+    li {
+      margin:0 0 10px;
+      padding:10px;
+      list-style: none;
+      @include clearfix;
+      background: #f2f2f2;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+  }
+  .ak-team-thumb {
+    float:left;
+    width: 75px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 10px 0 0;
+    display: block;
+  }
+  .ak-team-info {
+    margin: 0 0 0 85px;
+    .ak-team-data {
+      display: block;
+      margin: 0 0 3px;
+    }
+    .ak-team-name {
+      font-weight: $font-medium;
+      font-size: 1.2rem;
+      margin: 0 0 5px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "rightpoint-akumina-sharepoint-branding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.4"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp sass"
+  },
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "foundation": "^4.2.1-1"
+  }
+}
